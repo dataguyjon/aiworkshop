@@ -67,9 +67,6 @@ def tensorfiedImage(imgpath):
     shifted = shift(gray,shiftx,shifty)
     gray = shifted
 
-    # save the processed images
-    #cv2.imwrite(imgpath, gray)
-
     tensorfied = gray.reshape((28,28,1))
     
     images[0] = tensorfied
